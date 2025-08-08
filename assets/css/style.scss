@@ -1,9 +1,64 @@
 ---
 ---
 
+// Import theme styles first.
 @import "{{ site.theme }}";
 
+// Base styles
+body {
+  background-color: #2f2f2f; // dark grey background
+  color: #ffffff;         // white text
+  font-family: 'Roboto', sans-serif; // modern font
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+// Headings
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+  font-weight: 300;
+  margin: 1em 0 0.5em;
+}
+
+// Links
+a {
+  color: #ff6600; // orange highlights/links
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover, a:focus {
+  color: #ff8533;
+  text-decoration: underline;
+}
+
+// Images
 img {
   width: auto;
   height: auto;
+  max-width: 100%;
+  display: block;
+}
+
+// Container for modern layout
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+// Button styling
+button {
+  background-color: #ff6600;
+  border: none;
+  padding: 10px 20px;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff8533;
 }
